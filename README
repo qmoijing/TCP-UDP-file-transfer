@@ -2,11 +2,14 @@
 分別以TCP和UDP的方式進行檔案的傳輸
 每傳輸5%會告知傳輸的當下時間
 
+#編譯方式
+gcc file_transfer.c -o file_transfer
+
 #執行方式
 TCP:
-先執行send ./lab1_file_transfer tcp send (ip) (port) (filename)
-再執行recv ./lab1_file_transfer tcp recv (ip) (port)
+先執行send ./file_transfer tcp send (ip) (port) (filename)
+再執行recv ./file_transfer tcp recv (ip) (port)
 
 UDP:
-先執行recv ./lab1_file_transfer udp recv (ip) (port)
-再執行send ./lab1_file_transfer udp send (ip) (port) (filename)
+先執行recv ./file_transfer udp recv (ip) (port)
+再執行send ./file_transfer udp send (ip) (port) (filename)
